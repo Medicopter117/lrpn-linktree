@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leipzig Roleplay Network – Links</title>
+<meta name="theme-color" content="#0a1230">
+<style>
+  :root {
+    --gold: #ffd27a;
+    --text: #f6f3ee;
+    --muted: #c3c8e0;
+    --glass: rgba(255,255,255,.09);
+    --glass-hover: rgba(255,255,255,.16);
+    --line: rgba(255,255,255,.20);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { min-height: 100%; background: #0a1230; }
+  body {
+    min-height: 100vh;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(ellipse 80% 40% at 50% 100%, rgba(255,190,110,.55), transparent 70%),
+      linear-gradient(180deg, #0a1230 0%, #16225a 45%, #5a3470 78%, #d98a62 100%);
+    background-attachment: fixed;
+    padding: 56px 20px 200px;
+    display: flex; justify-content: center;
+    overflow-x: hidden;
+  }
+  /* Skyline */
+  .skyline {
+    position: fixed; left: 0; right: 0; bottom: 0; height: 190px;
+    width: 100%; pointer-events: none; z-index: 0;
+  }
+  main { position: relative; z-index: 1; width: 100%; max-width: 460px; }
+
+  header { text-align: center; margin-bottom: 34px; }
+  .logo {
+    width: 96px; height: 96px; margin: 0 auto 20px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 30px; font-weight: 800; letter-spacing: -1px;
+    color: #1a1236;
+    background: radial-gradient(circle at 30% 25%, #fff0c4, var(--gold) 60%, #f0a64a);
+    box-shadow: 0 0 0 6px rgba(255,210,122,.18), 0 0 40px rgba(255,200,110,.45);
+  }
+  h1 { font-size: 1.9rem; line-height: 1.15; letter-spacing: .01em; font-weight: 800; }
+  header p { color: var(--muted); margin-top: 8px; font-size: 1rem; }
+
+  ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+  a.link {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 18px 14px 14px;
+    border-radius: 18px;
+    background: var(--glass);
+    border: 1px solid var(--line);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    color: var(--text); text-decoration: none;
+    transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+  }
+  a.link:hover { background: var(--glass-hover); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.28); }
+  a.link:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .badge {
+    width: 48px; height: 48px; flex: none; border-radius: 14px;
+    display: grid; place-items: center;
+    background: var(--c, #fff); color: var(--ic, #fff);
+  }
+  .badge svg { width: 26px; height: 26px; fill: currentColor; }
+  .text { flex: 1; min-width: 0; }
+  .label { display: block; font-weight: 700; font-size: 1.05rem; }
+  .sub { display: block; font-size: .87rem; color: var(--muted); margin-top: 2px; }
+  .chev { width: 20px; height: 20px; flex: none; stroke: var(--muted); fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform .18s ease; }
+  a.link:hover .chev { transform: translateX(4px); stroke: var(--text); }
+
+  .featured {
+    background: linear-gradient(135deg, rgba(255,210,122,.30), rgba(255,210,122,.10));
+    border-color: rgba(255,210,122,.65);
+    padding: 18px 18px 18px 16px;
+  }
+  .featured .label { font-size: 1.15rem; }
+
+  /* Einmaliger Einstieg der Liste */
+  @media (prefers-reduced-motion: no-preference) {
+    li { opacity: 0; animation: in .55s ease forwards; }
+    li:nth-child(1) { animation-delay: .05s; } li:nth-child(2) { animation-delay: .13s; }
+    li:nth-child(3) { animation-delay: .21s; } li:nth-child(4) { animation-delay: .29s; }
+    li:nth-child(5) { animation-delay: .37s; }
+    @keyframes in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  }
+  @media (prefers-reduced-motion: reduce) { a.link, .chev { transition: none; } }
+  @media (max-width: 380px) { h1 { font-size: 1.6rem; } .sub { display: none; } }
+</style>
+</head>
+<body>
+
+<svg class="skyline" viewBox="0 0 1200 190" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <g fill="#0a0f2a">
+    <rect x="0" y="130" width="70" height="60"/><rect x="70" y="112" width="55" height="78"/>
+    <rect x="125" y="140" width="80" height="50"/><rect x="205" y="118" width="60" height="72"/>
+    <rect x="265" y="145" width="90" height="45"/>
+    <!-- Völkerschlachtdenkmal -->
+    <path d="M370 190V150h20v-14h18v-14h24v14h18v14h20v40z"/>
+    <rect x="404" y="106" width="32" height="16"/><path d="M406 106c2-16 26-16 28 0z"/>
+    <rect x="440" y="150" width="60" height="40"/>
+    <rect x="500" y="124" width="64" height="66"/><rect x="564" y="138" width="70" height="52"/>
+    <!-- City-Hochhaus (Weisheitszahn) -->
+    <path d="M660 190V40l14-14 14 14v150z"/><rect x="672" y="8" width="3" height="20"/>
+    <rect x="700" y="120" width="70" height="70"/><rect x="770" y="100" width="50" height="90"/>
+    <rect x="820" y="136" width="80" height="54"/><rect x="900" y="114" width="60" height="76"/>
+    <rect x="960" y="142" width="70" height="48"/><rect x="1030" y="120" width="60" height="70"/>
+    <rect x="1090" y="140" width="110" height="50"/>
+  </g>
+  <g fill="#ffd27a" opacity=".85">
+    <rect x="80" y="125" width="5" height="6"/><rect x="100" y="140" width="5" height="6"/><rect x="215" y="132" width="5" height="6"/>
+    <rect x="235" y="150" width="5" height="6"/><rect x="510" y="140" width="5" height="6"/><rect x="535" y="156" width="5" height="6"/>
+    <rect x="668" y="60" width="4" height="6"/><rect x="676" y="80" width="4" height="6"/><rect x="668" y="102" width="4" height="6"/>
+    <rect x="676" y="124" width="4" height="6"/><rect x="668" y="146" width="4" height="6"/>
+    <rect x="712" y="134" width="5" height="6"/><rect x="740" y="152" width="5" height="6"/><rect x="782" y="116" width="5" height="6"/>
+    <rect x="800" y="140" width="5" height="6"/><rect x="835" y="150" width="5" height="6"/><rect x="915" y="130" width="5" height="6"/>
+    <rect x="975" y="156" width="5" height="6"/><rect x="1045" y="136" width="5" height="6"/><rect x="1110" y="154" width="5" height="6"/>
+  </g>
+</svg>
+
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">LRN</div>
+    <h1>Leipzig Roleplay Network</h1>
+    <p>Alle wichtigen Links an einem Ort</p>
+  </header>
+
+  <ul>
+    <li>
+      <a class="link featured" href="https://teams.galaxybot.app/application/1502344774898683914" target="_blank" rel="noopener noreferrer">
+        <span class="badge" style="--c:#ffd27a;--ic:#1a1236"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05A4.2 4.2 0 0 1 17 16.5V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+        <span class="text"><span class="label">Teambewerbung</span><span class="sub">Bewirb dich für unser Team</span></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="link" href="https://discord.gg/Q42mCz3fQ8" target="_blank" rel="noopener noreferrer">
+        <span class="badge" style="--c:#5865f2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-8l-5 4v-4H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z"/></svg></span>
+        <span class="text"><span class="label">Discord</span><span class="sub">Tritt unserer Community bei</span></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="link" href="https://www.youtube.com/@leipzig.roleplay.network" target="_blank" rel="noopener noreferrer">
+        <span class="badge" style="--c:#ff2d2d"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 5h12a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4zm4 4v6l5-3z"/></svg></span>
+        <span class="text"><span class="label">YouTube</span><span class="sub">Videos und Neuigkeiten</span></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="link" href="https://www.roblox.com/communities/815820575/W-P-Studios#!/about" target="_blank" rel="noopener noreferrer">
+        <span class="badge" style="--c:#2b2f3a"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.64 .97 23.02 5.64 18.36 23.03 .98 18.36zM9.88 8.32 8.32 14.12 14.12 15.68 15.68 9.88z"/></svg></span>
+        <span class="text"><span class="label">Roblox Gruppe 1</span><span class="sub">W.P Studios</span></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </li>
+    <li>
+      <a class="link" href="https://www.roblox.com/communities/33810029/Leipzig-Roleplay#!/about" target="_blank" rel="noopener noreferrer">
+        <span class="badge" style="--c:#2b2f3a"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.64 .97 23.02 5.64 18.36 23.03 .98 18.36zM9.88 8.32 8.32 14.12 14.12 15.68 15.68 9.88z"/></svg></span>
+        <span class="text"><span class="label">Roblox Gruppe 2</span><span class="sub">Leipzig Roleplay</span></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
